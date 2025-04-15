@@ -1,32 +1,18 @@
 import styles from './sideBar.module.css';
 import EventCard from '../eventCard';
 
-const SideBar = () => {
-    const upcomingEvents = [
-        {
-          id: 1,
-          title: "Competição de Memes 2025",
-          date: "15 de Maio, 2025",
-          participants: 356,
-        },
-        {
-          id: 2,
-          title: "Workshop: Como Criar Memes Virais",
-          date: "22 de Maio, 2025",
-          participants: 127,
-        },
-      ];
+const SideBar = ({upcomingEvents}) => {
     return (
         <aside className={styles.sidebar}>
           <div className={styles.sidebarSection}>
             <h3 className={styles.sidebarTitle}>Eventos Próximos</h3>
             {upcomingEvents.map((event) => (
               <EventCard
-              // key={event.id}
+                id={event.id}
               title={event.title}
               date={event.date}
               participants={event.participants}
-              id={event.id}
+           
             />
             ))}
           </div>

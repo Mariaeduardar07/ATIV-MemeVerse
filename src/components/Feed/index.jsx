@@ -1,6 +1,5 @@
 import styles from "./feed.module.css";
 import MemeCard from "../memeCard";
-import InteractionBar from "../interactionBar";
 
 const Feed = ({ memes }) => {
   
@@ -24,10 +23,6 @@ const Feed = ({ memes }) => {
             {/* // COMPONENTE: MemeCard*/}
 
             <MemeCard meme={meme} />
-
-            {/* COMPONENTE: InteractionBar */}
-            {/* <InteractionBar meme={meme} /> */}
-            {/* FIM COMPONENTE: InteractionBar */}
           </div>
           // FIM COMPONENTE: MemeCard
         ))}

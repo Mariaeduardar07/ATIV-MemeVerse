@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
-import Header from "../components/header";
-import HeroSection from "../components/heroSection";
-import CategoriesSection from "../components/categoriesSection";
-import InteractionBar from "../components/interactionBar";
-import MemeCard from "../components/memeCard";
+import Header from "@/components/header";
+import HeroSection from "@/components/heroSection";
+import CategoriesSection from "@/components/categoriesSection";
+import InteractionBar from "@/components/interactionBar";
+import MemeCard from "@/components/memeCard";
 import Feed from "@/components/feed";
 import Footer from "@/components/footer";
 import NewsletterSection from "@/components/newsletterSection";
@@ -177,51 +177,31 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      {/* COMPONENTE: Header */}
       <Header />
-      {/* FIM COMPONENTE: Header */}
 
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
-          {/* COMPONENTE: HeroSection */}
-          <HeroSection />
-          {/* FIM COMPONENTE: HeroSection */}
+          <HeroSection memeOfTheDay={memeOfTheDay} />
 
-          {/* COMPONENTE: CategoriesSection */}
-          <CategoriesSection />
-          {/* FIM COMPONENTE: CategoriesSection */}
+          <CategoriesSection categories={categories} />
 
-          {/* COMPONENTE: Feed */}
-          <Feed memes={memes}/>
-          {/* COMPONENTE: MemeCard*/}
+          <Feed memes={memes} />
+
           <MemeCard meme={memes} />
-          {/* COMPONENTE: InteractionBar */}
+
           <InteractionBar meme={memes} />
-          {/* FIM COMPONENTE: InteractionBar */}
-          {/* // FIM COMPONENTE: MemeCard*/}
-          {/* FIM COMPONENTE: Feed */}
 
-          {/* COMPONENTE: FeaturedMemesSection */}
           <FeaturedMemesSection featuredMemes={featuredMemes} />
-          {/* FIM COMPONENTE: FeaturedMemesSection */}
 
-          {/* COMPONENTE: CreatorsSection */}
-          <CreatorsSection />
-          {/* FIM COMPONENTE: CreatorsSection */}
+          <CreatorsSection topCreators={topCreators} />
 
-          {/* COMPONENTE: NewsletterSection */}
           <NewsletterSection />
-          {/* FIM COMPONENTE: NewsletterSection */}
         </div>
 
-        {/* COMPONENTE: Sidebar*/}
-       <SideBar /> 
-        {/* FIM COMPONENTE: Sidebar */}
+        <SideBar upcomingEvents={upcomingEvents} />
       </div>
 
-      {/* COMPONENTE: Footer */}
       <Footer />
-      {/* FIM COMPONENTE: Footer */}
     </div>
   );
 }
