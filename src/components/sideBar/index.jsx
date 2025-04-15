@@ -22,10 +22,11 @@ const SideBar = () => {
             <h3 className={styles.sidebarTitle}>Eventos Próximos</h3>
             {upcomingEvents.map((event) => (
               <EventCard
-              key={event.id}
+              // key={event.id}
               title={event.title}
               date={event.date}
               participants={event.participants}
+              id={event.id}
             />
             ))}
           </div>
