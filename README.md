@@ -107,6 +107,7 @@ O projeto está organizado da seguinte forma:
 **Encerramento da Página**
 
 -NewsletterSection: Seção de inscrição
+
 -Footer: Rodapé com links e redes sociais
 
 **Refatorações e Estilizações**
