@@ -86,29 +86,29 @@ O projeto está organizado da seguinte forma:
 ## **📈 Decisões de Design**
 ## Ordem do desenvolvimento
 
-# Configuração inicial
+**Configuração inicial**
 - Criação da pasta components/
 - Aplicação do reset CSS
 - Estrutura base da página principal
 
-# Topo da Página
+**Topo da Página**
 - Header: Cabeçalho com navegação
 - HeroSection: Seção de destaque inicial (banner)
 
-# Conteúdo Principal
+**Conteúdo Principal**
 - CategoriesSection: Exibição de categorias
 - MemeCard, InteractionBar e Feed: Cards de memes com likes/comentários
 - SideBar e EventCard: Conteúdos laterais e eventos
 
-# Seções de Destaque
+**Seções de Destaque**
 - CreatorsCard e CreatorsSection: Destaque para criadores de conteúdo
 - FeaturedMemeCard e FeaturedMemesSection: Memes em destaque
 
-# Encerramento da Página
+**Encerramento da Página**
 -NewsletterSection: Seção de inscrição
 -Footer: Rodapé com links e redes sociais
 
-# Refatorações e Estilizações
+**Refatorações e Estilizações**
 - Ajuste de props em vários componentes para melhor organização de dados
 - Correção de chaves únicas (key) em listas
 - Estilização adicional com CSS Modules
@@ -118,7 +118,7 @@ O projeto está organizado da seguinte forma:
 - CSS Modules: Escolhido para garantir o isolamento de estilos, evitando conflitos entre componentes.
 - Responsividade: Priorizada desde o início para garantir uma boa experiência de uso em diferentes tamanhos de tela, especialmente dispositivos móveis.
 
-💡 Desafios e Soluções
+## **💡 Desafios e Soluções**
 Desafio: Organização e integração de dados entre os componentes.
 
 Solução: Utilização de props para passar dados de forma clara, direta e organizada, mantendo a estrutura do código mais limpa e flexível.
