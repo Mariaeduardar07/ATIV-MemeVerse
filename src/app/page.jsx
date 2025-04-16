@@ -12,6 +12,15 @@ import CreatorsSection from "@/components/creatorsSection";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
 
 export default function Home() {
+
+  const logo = {name: "memeVerse"}
+  const navItems = [
+    { name: "home", href: "/"},
+    { name: "trending", href: "/trending"},
+    { name: "create", href: "/create"},
+    { name: "categories", href: "/categories"},
+    { name: "profile", href: "/profile"},
+  ]
   // Array de dados dos memes para serem passados como props
   const memes = [
     {
@@ -177,8 +186,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header />
-
+      <Header logo={logo} navItems={navItems} />
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
           <HeroSection memeOfTheDay={memeOfTheDay} />
