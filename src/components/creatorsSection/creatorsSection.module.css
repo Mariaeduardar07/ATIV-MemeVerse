@@ -29,6 +29,10 @@
     background-color: #4e5de4;
     border-radius: 10px;
   }
- 
-  
- 
+
+ /* Responsividade para o CreatorsSection */
+@media (max-width: 768px) {
+  .creatorsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}

@@ -81,3 +81,18 @@
     background-color: #4e5de4;
     border-radius: 10px;
   }
+
+  /* Responsividade para o Feed */
+@media (max-width: 768px) {
+  .feedHeader {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedGrid {
+    grid-template-columns: 1fr;
+  }
+}

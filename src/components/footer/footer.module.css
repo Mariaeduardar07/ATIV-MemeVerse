@@ -99,3 +99,31 @@
     transform: translateY(-3px);
   }
   
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footerNavContainer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footerNavSection {
+    flex: 1 0 40%;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerNavSection {
+    flex: 1 0 100%;
+  }
+}

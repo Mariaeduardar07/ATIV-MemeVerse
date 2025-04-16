@@ -61,3 +61,10 @@
     font-size: 13px;
     color: #666;
   }
+
+  /* Responsividade para o CategoriesSection */
+@media (max-width: 480px) {
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

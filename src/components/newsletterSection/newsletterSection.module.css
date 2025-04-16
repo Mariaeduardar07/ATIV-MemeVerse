@@ -76,3 +76,14 @@
     object-fit: cover;
   }
   
+  /* Responsividade para o NewsletterSection */
+@media (max-width: 1024px) {
+  .newsletterSection {
+    flex-direction: column;
+  }
+
+  .newsletterImageContainer {
+    max-width: 100%;
+    height: 200px;
+  }
+}
