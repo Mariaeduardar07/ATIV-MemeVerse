@@ -105,6 +105,7 @@ O projeto está organizado da seguinte forma:
 - FeaturedMemeCard e FeaturedMemesSection: Memes em destaque
 
 **Encerramento da Página**
+
 -NewsletterSection: Seção de inscrição
 -Footer: Rodapé com links e redes sociais
 
@@ -152,12 +153,8 @@ npm run dev
 ## 5. Acesse o projeto no navegador:
 ```bash
 http://localhost:3000
+
 ```
----
-
-## 📜 Licença
-Este projeto foi desenvolvido para fins educacionais e não possui uma licença específica.
-
 ---
 
 ## 👩‍💻 Desenvolvido por
