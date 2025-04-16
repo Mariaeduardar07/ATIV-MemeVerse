@@ -2,7 +2,6 @@ import styles from "./feed.module.css";
 import MemeCard from "../memeCard";
 
 const Feed = ({ memes }) => {
-  
   return (
     <section className={styles.feedSection}>
       <div className={styles.feedHeader}>
@@ -20,11 +19,8 @@ const Feed = ({ memes }) => {
         {/* Aqui mapeamos os memes do array para criar múltiplos cards */}
         {memes.map((meme) => (
           <div key={meme.id} className={styles.memeCard}>
-            {/* // COMPONENTE: MemeCard*/}
-
             <MemeCard meme={meme} />
           </div>
-          // FIM COMPONENTE: MemeCard
         ))}
       </div>
 
