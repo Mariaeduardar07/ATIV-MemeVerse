@@ -159,6 +159,6 @@ http://localhost:3000
 ---
 
 ## 👩‍💻 Desenvolvido por
-Maria Eduarda Reis Pereira
-SENAI - Curso Desenvolvimento de Sistema
-Atividade Avaliativa de Front-End
+- Maria Eduarda Reis Pereira
+- SENAI - Curso Desenvolvimento de Sistema
+- Atividade Avaliativa de Front-End
