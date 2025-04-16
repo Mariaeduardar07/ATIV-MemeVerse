@@ -1,6 +1,6 @@
 import styles from "./footer.module.css";
 
-const Footer = () => {
+const Footer = ({ socialLinks }) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerTop}>
@@ -53,21 +53,15 @@ const Footer = () => {
         </div>
       </div>
 
+
       <div className={styles.footerBottom}>
         <p>© 2025 MemeVerse - Todos os direitos reservados</p>
         <div className={styles.socialLinks}>
-          <a href="#" className={styles.socialLink}>
-            <span>📱</span>
-          </a>
-          <a href="#" className={styles.socialLink}>
-            <span>📘</span>
-          </a>
-          <a href="#" className={styles.socialLink}>
-            <span>📸</span>
-          </a>
-          <a href="#" className={styles.socialLink}>
-            <span>🐦</span>
-          </a>
+          {socialLinks.map((link, index) => (
+            <a key={index} href={link.url} className={styles.socialLink}>
+              {link.icon}
+            </a>
+          ))}
         </div>
       </div>
     </footer>

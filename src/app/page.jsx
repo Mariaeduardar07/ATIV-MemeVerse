@@ -12,15 +12,22 @@ import CreatorsSection from "@/components/creatorsSection";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
 
 export default function Home() {
-
-  const logo = {name: "memeVerse"}
+  const logo = { name: "memeVerse" };
   const navItems = [
-    { name: "home", href: "/"},
-    { name: "trending", href: "/trending"},
-    { name: "create", href: "/create"},
-    { name: "categories", href: "/categories"},
-    { name: "profile", href: "/profile"},
-  ]
+    { name: "home", href: "/" },
+    { name: "trending", href: "/trending" },
+    { name: "create", href: "/create" },
+    { name: "categories", href: "/categories" },
+    { name: "profile", href: "/profile" },
+  ];
+
+  // Array com o emojis e links das redes sociais da footer
+  const socialLinks = [
+    { icon: "📱", href: "#" },
+    { icon: "📘", href: "#" },
+    { icon: "📸", href: "#" },
+    { icon: "🐦", href: "#" },
+  ];
   // Array de dados dos memes para serem passados como props
   const memes = [
     {
@@ -209,7 +216,7 @@ export default function Home() {
         <SideBar upcomingEvents={upcomingEvents} />
       </div>
 
-      <Footer />
+      <Footer socialLinks={socialLinks} />
     </div>
   );
 }
